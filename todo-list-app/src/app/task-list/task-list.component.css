@@ -1,0 +1,105 @@
+div.center-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin-left: 434px;
+}
+
+.center-container {
+    border: 2px solid #f5c8c8;
+    height: 500px;
+    background-color: #e9e7e5;
+    width: 670px;
+    padding-top: 20px;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+/* Form styles */
+input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 7px 3px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Task list styles */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+/* Task item styles */
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+input {
+    height: 37px;
+    border-radius: 5px;
+
+}
+
+/* Edit and Delete buttons */
+button.edit-button,
+button.delete-button {
+    background-color: transparent;
+    color: #007bff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+/* Complete and Save buttons */
+button.complete-button,
+button.save-button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+/* Hover styles for buttons */
+button:hover {
+    background-color: #0056b3;
+}
+
+li:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.664);
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.center-container:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.705);
+    transition: box-shadow 0.2s ease-in-out;
+}

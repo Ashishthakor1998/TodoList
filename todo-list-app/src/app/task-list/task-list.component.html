@@ -1,0 +1,18 @@
+<div class="center-container" style="height:500px; border-radius:150px">
+    <h2>To-Do List</h2>
+    <div>
+        <input [(ngModel)]="newTask.title" placeholder="Task title" style="height:37px" />
+        <button (click)="addTask()">Add Task</button>
+    </div>
+    <ul>
+        <li *ngFor="let task of tasks">
+            <input type="radio" [(ngModel)]="task.completed" [disabled]="task.completed" />
+            <input [(ngModel)]="task.title" [disabled]="task.completed" />
+            <button (click)="completeTask(task)" [hidden]="task.completed">Complete</button>
+            <button (click)="editTask(task)" [hidden]="task.completed">Edit</button>
+            <button (click)="deleteTask(task)">Delete</button>
+            <button (click)="saveEditedTask()" *ngIf="editingTask === task">Save</button>
+            <button (click)="cancelEdit()" *ngIf="editingTask === task">Cancel</button>
+        </li>
+    </ul>
+</div>
