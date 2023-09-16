@@ -103,3 +103,16 @@ li:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.705);
     transition: box-shadow 0.2s ease-in-out;
 }
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.buttons-right {
+    display: flex;
+    gap: 10px;
+    margin-left: auto;
+}
