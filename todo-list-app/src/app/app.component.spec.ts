@@ -1,9 +1,12 @@
 import { TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import { TaskListComponent } from './task-list/task-list.component';
+import { FormsModule } from '@angular/forms';
 
 describe('AppComponent', () => {
   beforeEach(() => TestBed.configureTestingModule({
-    declarations: [AppComponent]
+    declarations: [AppComponent, TaskListComponent],
+    imports: [FormsModule],
   }));
 
   it('should create the app', () => {
@@ -22,6 +25,6 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('todo-list-app app is running!');
+    expect(compiled.querySelector('h2')?.textContent).toContain('To-Do List');
   });
 });
